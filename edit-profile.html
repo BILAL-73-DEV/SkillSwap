@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile | SkillSwap</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="../../index.html">SkillSwap</a>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="../marketplace/services.html">Marketplace</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html" aria-current="page">My Profile</a></li>
+        <li><a href="../orders/my-orders.html">My Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-heading">
+      <h1>Edit Profile</h1>
+      <p>Update the details other students see on your profile.</p>
+    </header>
+
+    <form class="card form-card" action="#" method="get">
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="full-name">Full name</label>
+          <input id="full-name" name="full-name" type="text"
+                 value="Ahmad Khan" autocomplete="name" required>
+        </div>
+
+        <div class="form-field">
+          <label for="university">University</label>
+          <input id="university" name="university" type="text"
+                 value="Example University" required>
+        </div>
+
+        <div class="form-field">
+          <label for="department">Department</label>
+          <input id="department" name="department" type="text"
+                 value="Computer Science" required>
+        </div>
+
+        <div class="form-field">
+          <label for="semester">Semester or academic year</label>
+          <input id="semester" name="semester" type="text"
+                 value="3rd year">
+        </div>
+
+        <div class="form-field form-field-full">
+          <label for="bio">Short biography</label>
+          <textarea id="bio" name="bio" maxlength="500">I’m a computer science student who enjoys helping classmates learn web development and programming.</textarea>
+          <span class="form-help">Briefly describe what you know and how you can help other students.</span>
+        </div>
+
+        <div class="form-field form-field-full">
+          <label for="skills">Skills</label>
+          <input id="skills" name="skills" type="text"
+                 value="HTML5, CSS3, Python, Tutoring">
+          <span class="form-help">Separate skills with commas.</span>
+        </div>
+
+        <div class="form-field form-field-full">
+          <label for="profile-image">Profile image</label>
+          <input id="profile-image" name="profile-image" type="file"
+                 accept="image/*">
+          <span class="form-help">Choose an image from your device. This static form does not upload it yet.</span>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="button" type="submit">Save Changes</button>
+        <a class="button button-secondary" href="profile.html">Cancel</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>SkillSwap · Learn and share skills with your university community.</p>
+  </footer>
+</body>
+</html>

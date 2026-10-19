@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile | SkillSwap</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="../../index.html">SkillSwap</a>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="sell-service.html">Marketplace</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html" aria-current="page">My Profile</a></li>
+        <li><a href="order.html">My Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-heading">
+      <h1>My Profile</h1>
+      <p>Your profile helps other students learn about your skills and services.</p>
+    </header>
+
+    <div class="profile-layout">
+      <section class="card">
+        <div class="profile-intro">
+          <div class="avatar" aria-hidden="true">AK</div>
+          <div>
+            <h2>Ahmad Khan</h2>
+            <p>Computer Science student</p>
+          </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--light-gray); margin: 22px 0;">
+
+        <div class="profile-details">
+          <div>
+            <span class="detail-label">University</span>
+            <span class="detail-value">Example University</span>
+          </div>
+          <div>
+            <span class="detail-label">Department</span>
+            <span class="detail-value">Computer Science</span>
+          </div>
+          <div>
+            <span class="detail-label">Academic year</span>
+            <span class="detail-value">3rd year</span>
+          </div>
+          <div>
+            <span class="detail-label">Rating</span>
+            <span class="detail-value">4.8 out of 5 ★</span>
+          </div>
+        </div>
+
+        <div class="quick-links">
+          <a class="button" href="edit-profile.html">Edit Profile</a>
+          <a class="button button-secondary" href="dashboard.html">Dashboard</a>
+        </div>
+      </section>
+
+      <div>
+        <section class="card" style="margin-bottom: 18px;">
+          <h2>About me</h2>
+          <p>
+            I’m a computer science student who enjoys helping classmates learn
+            web development and programming. I can help with beginner-friendly
+            HTML, CSS, and Python topics.
+          </p>
+        </section>
+
+        <section class="card" style="margin-bottom: 18px;">
+          <h2>Skills</h2>
+          <div class="skills">
+            <span class="skill">HTML5</span>
+            <span class="skill">CSS3</span>
+            <span class="skill">Python</span>
+            <span class="skill">Tutoring</span>
+          </div>
+        </section>
+
+        <section class="card" style="margin-bottom: 18px;">
+          <h2>Services offered</h2>
+          <div class="service-list">
+            <article class="service-item">
+              <h3>Intro to Python tutoring</h3>
+              <p>$15 per session</p>
+            </article>
+            <article class="service-item">
+              <h3>Website styling with CSS</h3>
+              <p>$25 per project</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Recent reviews</h2>
+          <div class="review-list">
+            <article class="review-item">
+              <h3>“Very clear and helpful!” · ★★★★★</h3>
+              <p class="muted">Student review · Sample review</p>
+            </article>
+            <article class="review-item">
+              <h3>“Patient tutor who explained each step.” · ★★★★★</h3>
+              <p class="muted">Student review · Sample review</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>SkillSwap · Learn and share skills with your university community.</p>
+  </footer>
+</body>
+</html>

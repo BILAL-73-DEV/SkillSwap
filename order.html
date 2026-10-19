@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap | Ashar Daniyal</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <a href="#orders" class="logo">Skill<span>Swap</span></a>
+
+        <nav>
+            <a href="#orders">My Orders</a>
+            <a href="#order-details">Order Details</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Page 1: My Orders -->
+    <section id="orders" class="section">
+        <div class="section-heading">
+            <p class="eyebrow">STUDENT DASHBOARD</p>
+            <h1>My Orders</h1>
+            <p>Manage your services and track your orders on SkillSwap.</p>
+        </div>
+
+        <div class="summary-grid">
+            <div class="summary-card">
+                <span>Total Orders</span>
+                <h2>4</h2>
+            </div>
+
+            <div class="summary-card">
+                <span>In Progress</span>
+                <h2>2</h2>
+            </div>
+
+            <div class="summary-card">
+                <span>Completed</span>
+                <h2>2</h2>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Order History</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order No.</th>
+                            <th>Service Name</th>
+                            <th>Seller</th>
+                            <th>Price</th>
+                            <th>Order Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#SS101</td>
+                            <td>Website Design</td>
+                            <td>Ali Ahmed</td>
+                            <td>Rs. 2,500</td>
+                            <td>05 Oct 2026</td>
+                            <td><span class="status progress">In Progress</span></td>
+                            <td><a class="table-link" href="#order-details">View Details</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#SS102</td>
+                            <td>Graphic Design</td>
+                            <td>Sara Khan</td>
+                            <td>Rs. 1,500</td>
+                            <td>03 Oct 2026</td>
+                            <td><span class="status completed">Completed</span></td>
+                            <td><a class="table-link" href="#order-details">View Details</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#SS103</td>
+                            <td>Presentation Design</td>
+                            <td>Usman Ali</td>
+                            <td>Rs. 1,000</td>
+                            <td>07 Oct 2026</td>
+                            <td><span class="status pending">Pending</span></td>
+                            <td><a class="table-link" href="#order-details">View Details</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#SS104</td>
+                            <td>Programming Tutoring</td>
+                            <td>Hina Malik</td>
+                            <td>Rs. 2,000</td>
+                            <td>01 Oct 2026</td>
+                            <td><span class="status completed">Completed</span></td>
+                            <td><a class="table-link" href="#order-details">View Details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="note">
+                Note: These orders are sample data for the project demonstration.
+            </p>
+        </div>
+    </section>
+
+    <!-- Page 2: Order Details -->
+    <section id="order-details" class="section alternate">
+        <div class="section-heading">
+            <p class="eyebrow">ORDER MANAGEMENT</p>
+            <h1>Order Details</h1>
+            <p>Review the information and delivery status of your order.</p>
+        </div>
+
+        <div class="content-card">
+            <div class="order-top">
+                <div>
+                    <p class="muted">Order Number</p>
+                    <h2>#SS101</h2>
+                </div>
+
+                <span class="status progress">In Progress</span>
+            </div>
+
+            <hr>
+
+            <div class="details-grid">
+                <div>
+                    <p class="muted">Service Name</p>
+                    <h3>Website Design</h3>
+                </div>
+
+                <div>
+                    <p class="muted">Price</p>
+                    <h3>Rs. 2,500</h3>
+                </div>
+
+                <div>
+                    <p class="muted">Buyer</p>
+                    <h3>Ashar Daniyal</h3>
+                </div>
+
+                <div>
+                    <p class="muted">Seller</p>
+                    <h3>Ali Ahmed</h3>
+                </div>
+
+                <div>
+                    <p class="muted">Order Date</p>
+                    <h3>05 October 2026</h3>
+                </div>
+
+                <div>
+                    <p class="muted">Expected Delivery</p>
+                    <h3>15 October 2026</h3>
+                </div>
+            </div>
+
+            <hr>
+
+            <h2>Order Description</h2>
+            <p>
+                A responsive website design for a student project, including
+                a home page, navigation bar, service cards, and contact section.
+            </p>
+
+            <div class="delivery-box">
+                <h3>Delivery Information</h3>
+                <p>
+                    The seller is currently working on the website design.
+                    The expected delivery date is 15 October 2026.
+                </p>
+            </div>
+
+            <a href="#orders" class="btn">Back to My Orders</a>
+        </div>
+    </section>
+
+    <!-- Page 3: About Us -->
+    <section id="about" class="section">
+        <div class="section-heading">
+            <p class="eyebrow">GET TO KNOW US</p>
+            <h1>About SkillSwap</h1>
+            <p>A student-powered platform for learning, sharing, and growing.</p>
+        </div>
+
+        <div class="about-hero">
+            <div>
+                <h2>Skills are better when shared.</h2>
+                <p>
+                    SkillSwap is a student-focused platform where university
+                    students can offer their skills, discover services, learn
+                    from other students, and collaborate on academic and
+                    creative projects.
+                </p>
+                <a href="#contact" class="btn">Contact Our Team</a>
+            </div>
+
+            <div class="about-highlight">
+                <span class="highlight-icon">✦</span>
+                <h3>Learn. Share. Grow.</h3>
+                <p>Building a community where every skill has value.</p>
+            </div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>The Problem We Solve</h3>
+                <p>
+                    Students often struggle to find affordable services,
+                    reliable academic support, and opportunities to use
+                    their own talents. SkillSwap brings students together
+                    in one place to help solve these problems.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>How SkillSwap Works</h3>
+                <p>
+                    Students can browse services, buy help from other students,
+                    sell their own skills, offer tutoring, and exchange
+                    knowledge with their university community.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <h3>Our Mission</h3>
+                <p>
+                    Our mission is to empower students by making skill-sharing
+                    accessible, encouraging collaboration, and helping young
+                    people develop practical experience.
+                </p>
+            </div>
+        </div>
+
+        <div class="why-section">
+            <h2>Why Choose SkillSwap?</h2>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <span>01</span>
+                    <h3>Student Community</h3>
+                    <p>Connect with other students and share knowledge.</p>
+                </div>
+
+                <div class="why-item">
+                    <span>02</span>
+                    <h3>Affordable Services</h3>
+                    <p>Discover useful services offered by fellow students.</p>
+                </div>
+
+                <div class="why-item">
+                    <span>03</span>
+                    <h3>Skill Development</h3>
+                    <p>Build experience while helping others succeed.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="center-action">
+            <h2>Ready to connect and grow?</h2>
+            <p>Become part of a community that values every skill.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Page 4: Contact Us -->
+    <section id="contact" class="section alternate">
+        <div class="section-heading">
+            <p class="eyebrow">WE ARE HERE TO HELP</p>
+            <h1>Contact Us</h1>
+            <p>Have a question or suggestion? Send a message to our team.</p>
+        </div>
+
+        <div class="contact-layout">
+            <div class="contact-info">
+                <h2>Let's Talk</h2>
+                <p>
+                    We welcome your questions, feedback, and suggestions
+                    about the SkillSwap platform.
+                </p>
+
+                <div class="contact-item">
+                    <span class="contact-icon">✉</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>skillswap@example.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">⌖</span>
+                    <div>
+                        <h3>Community</h3>
+                        <p>University Student Community</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-icon">◷</span>
+                    <div>
+                        <h3>Availability</h3>
+                        <p>Submit your message anytime.</p>
+                    </div>
+                </div>
+
+                <div class="contact-tip">
+                    <strong>We value your feedback.</strong>
+                    <p>Your suggestions can help us improve SkillSwap.</p>
+                </div>
+            </div>
+
+            <div class="content-card contact-form-card">
+                <h2>Send Us a Message</h2>
+
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What is your message about?"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn submit-btn">
+                        Send Message
+                    </button>
+
+                    <p class="note">
+                        Demonstration form only. Sending messages requires
+                        backend or form-processing functionality.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#orders" class="footer-logo">Skill<span>Swap</span></a>
+        <p>Connecting students through skills, learning, and collaboration.</p>
+
+        <div class="footer-links">
+            <a href="#orders">My Orders</a>
+            <a href="#order-details">Order Details</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 SkillSwap. Student Project.
+        </p>
+        <p class="developer">Prepared by Ashar Daniyal</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+:root
+{
+    /* color scheme from color_code.docx */
+    --deep-teal: #287C76;
+    --primary-teal: #55A9A0;
+    --light-mint: #A9EBD5;
+    --pale-yellow: #FFF5A8;
+    --white: #FFFFFF;
+    --off-white: #F7FAF9;
+    --light-gray: #E5EEEB;
+    --dark-text: #243735;
+    --secondary-text: #6B7C79;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(image11.jpg) ;
+    background-size: 100%;
+}
+
+.form {
+    width: 420px;
+    background: transparent;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.form h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color:var(--dark-text);
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid var(--light-mint);
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    padding: 0 45px 0 20px;
+}
+
+.input-box input::placeholder {
+    color:var(--dark-text);
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: 15px 0;
+    color: var(--dark-text);
+}
+
+.remember-forget label input {
+    accent-color: blue;
+    margin-right: 5px;
+}
+
+.remember-forget a {
+    color: var(--dark-text);
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: var(--dark-text);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.btn:hover {
+    background-color: var(--light-mint);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--dark-text);
+}
+
+.register-link a {
+    color: var(--dark-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offer a Service | SkillSwap</title>
+  <link rel="stylesheet" href="marketplace.css">
+</head>
+
+<body>
+  <nav class="navbar"><a class="brand" href="../../index.html"><span class="brand-mark">S</span> SkillSwap</a><button
+      class="nav-toggle" aria-label="Navigation menu"
+      onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links"><a href="services.html">Explore</a><a href="categories.html">Categories</a><a class="active"
+        href="sell-service.html">Become a Seller</a><a class="nav-cta" href="services.html">Browse Services
+        <span>↗</span></a></div>
+  </nav>
+  <main class="sell-page">
+    <section class="sell-intro"><span class="eyebrow"><span class="eyebrow-dot"></span> YOUR TALENT, YOUR NEXT
+        OPPORTUNITY</span>
+      <h1>Turn your skills into <span>something bigger.</span></h1>
+      <p>Offer a service to fellow students, build your portfolio, and learn by working on real ideas.</p>
+      <div class="sell-benefits"><span><b>01</b> Share what you know</span><span><b>02</b> Build real
+          experience</span><span><b>03</b> Grow your network</span></div>
+      <div class="sell-decoration"><span class="deco-star">✳</span><span class="deco-circle"></span><span
+          class="deco-squiggle">〰</span><span class="deco-label">SKILLS IN ACTION ↗</span></div>
+    </section>
+    <section class="form-panel">
+      <div class="form-heading"><span class="form-step">STEP 01 <span>OF 01</span></span>
+        <h2>Create your service</h2>
+        <p>Give students the details they need to get started.</p>
+      </div>
+      <form action="#" method="post" enctype="multipart/form-data"
+        onsubmit="event.preventDefault(); document.getElementById('form-message').hidden=false;">
+        <div class="form-field"><label for="service-title">Service title <span>*</span></label><input id="service-title"
+            name="service-title" type="text" placeholder="e.g. Responsive website development" required><small>Be
+            specific and describe the outcome you offer.</small></div>
+        <div class="form-row">
+          <div class="form-field"><label for="service-category">Category <span>*</span></label><select
+              id="service-category" name="service-category" required>
+              <option value="" disabled selected>Choose a category</option>
+              <option>Programming</option>
+              <option>Graphic Design</option>
+              <option>Presentation Design</option>
+              <option>Tutoring</option>
+              <option>Content Writing</option>
+              <option>Video Editing</option>
+            </select></div>
+          <div class="form-field"><label for="service-price">Price (PKR) <span>*</span></label>
+            <div class="price-input"><span>Rs.</span><input id="service-price" name="service-price" type="number"
+                min="1" placeholder="2500" required></div>
+          </div>
+        </div>
+        <div class="form-field"><label for="service-description">Service description <span>*</span></label><textarea
+            id="service-description" name="service-description" rows="5"
+            placeholder="Explain what you offer, what the buyer will receive, and any requirements..."
+            required></textarea><small>Keep it clear, helpful, and realistic.</small></div>
+        <div class="form-field"><label for="delivery-time">Estimated delivery time <span>*</span></label>
+          <div class="delivery-input"><input id="delivery-time" name="delivery-time" type="number" min="1"
+              placeholder="3" required><select aria-label="Delivery time unit" name="delivery-unit">
+              <option>days</option>
+              <option>hours</option>
+              <option>weeks</option>
+            </select></div>
+        </div>
+        <div class="form-field"><label for="service-image">Service image <span
+              class="optional-label">OPTIONAL</span></label><label class="upload-area" for="service-image"><span
+              class="upload-icon">↑</span><strong>Choose an image to upload</strong><small>PNG, JPG or WEBP · Keep it
+              clear and relevant</small><input id="service-image" name="service-image" type="file"
+              accept="image/png,image/jpeg,image/webp"></label></div>
+        <div id="form-message" class="form-message" hidden><strong>Demo form only.</strong> Your details have not been
+          published. Backend integration is needed to save and publish a service.</div>
+        <label class="terms-check"><input type="checkbox" required><span>I confirm this listing describes a service I
+            can provide and the details are accurate.</span></label>
+        <button class="button button-primary full-button" type="submit">Submit service <span>→</span></button>
+        <p class="form-disclaimer">This front-end demo does not store data, upload images, or publish listings.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand" href="../../index.html"><span class="brand-mark">S</span> SkillSwap</a>
+    <p>Learn together. Build together. Grow together.</p>
+    <div class="footer-links"><a href="services.html">Explore</a><a href="categories.html">Categories</a><a
+        href="sell-service.html">Become a seller</a></div><small>© 2026 SkillSwap · Student-powered,
+      community-first.</small>
+  </footer>
+</body>
+
+</html>

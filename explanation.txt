@@ -1,0 +1,27 @@
+bilal
+
+home.html
+home.css
+login.html
+login.css
+registration.html
+registration.css
+combinig all pages
+defining color tones of website
+
+ahmad
+
+dasboard.html
+profile.html
+edit profile.html
+student.css
+
+ashar
+order.html
+order.css
+
+ismail
+categories.html
+sell-services.html
+servieces-detail.html
+services.html

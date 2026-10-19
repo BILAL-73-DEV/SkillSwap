@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');/*use for importing font from google fonts*/
+:root
+{
+    /* color scheme from color_code.docx */
+    --deep-teal: #287C76;
+    --primary-teal: #55A9A0;
+    --light-mint: #A9EBD5;
+    --pale-yellow: #FFF5A8;
+    --white: #FFFFFF;
+    --off-white: #F7FAF9;
+    --light-gray: #E5EEEB;
+    --dark-text: #243735;
+    --secondary-text: #6B7C79;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* fond family details */
+    font-family: "Roboto", sans-serif;
+}
+
+.portfolio-container
+ 
+{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+}
+.nav-list
+/* for changing columns into rows */
+{
+    display: flex;
+    gap: 10rem;
+    height: 15vh;
+    width: 100%;
+    /* used for centring the content on x axsis horizantally */
+    justify-content: center;
+      /*used for centring items vertically on y axsis  */
+    align-items: center;
+    /* moves nav lis div on to the left and right container div  */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* navbar uses Deep Teal */
+    background-color: var(--deep-teal);
+   
+}
+.nav-list li
+/* removing bullet points that comes with the ls tag */
+{
+    list-style: none;
+}
+.nav-list li a
+/* removing under line that comes with the anchor tag and turning them into upper case */
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--white);
+    position: relative;
+    transition: .3s ease;
+}
+.left-container ,.right-container
+/* for common properties */
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.left-container
+{
+    
+    background-image: url(image.4.jpg);
+    background-size: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 50rem;
+    /* so icons should not be closed to left */
+    padding-left: 3rem;
+}
+.right-container
+{
+    background-image: url(image3.jpg);
+    background-size:220%;
+    background-repeat: no-repeat;
+    background-position: center;   
+    width: 30%;
+    height: 50rem;
+}
+
+.icons .fa-brands
+{
+    color: var(--primary-teal);
+    font-size: 1.7rem;
+}
+.icons
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.content
+{
+    margin-left: 5rem;
+}
+.content .intro
+{
+    font-size: 1.5rem;
+    color: var(--dark-text);
+}
+.content .intro span 
+/* used for specifically giving color to Muhammad.Bilal */
+{
+    color: var(--deep-teal);
+}
+.content h1
+{
+    font-size: 3rem;
+    color: var(--pale-yellow);
+    flex-wrap: wrap;
+    align-items: center;
+}
+.content h2
+{
+    font-size: 2rem;
+    color: var(--pale-yellow);
+        flex-wrap: wrap;
+
+}
+.content .detail
+{
+    font-size: 1.1rem;
+    color: var(--light-mint);
+    max-width: 38%;
+    /* margin for adding space between hedaing 1 and paragraph from top right bottom left */
+    margin: 1.1rem 0rem 3rem 0rem;
+    /* line height spacing between the lines */
+    line-height: 1.8rem;
+
+
+}
+
+.btn-container .btn {
+display: inline-block;
+border: .1rem solid var(--deep-teal);
+font-size: 1.1rem;
+padding: .8rem .6rem;
+border-radius: 1rem;
+cursor: pointer;
+transition: .6888s ease;
+text-decoration: none;
+}
+
+.btn-container .btn:nth-child(1) {
+background-color: var(--deep-teal);
+color: var(--white);
+}
+
+.btn-container .btn:nth-child(2) {
+background-color: transparent;
+color: var(--deep-teal);
+margin-left: 1rem;
+}
+
+.btn-container .btn:nth-child(1):hover {
+background-color: transparent;
+color: var(--deep-teal);
+}
+
+.btn-container .btn:nth-child(2):hover {
+background-color: var(--deep-teal);
+color: var(--white);
+}
+
+.icons .fa-brands:hover
+{
+    cursor: pointer;
+    background: linear-gradient(var(--deep-teal),var(--primary-teal));
+    /* “Clip the background to the shape of the text.” or gives our gradient the shape of letter */
+    -webkit-background-clip: text;
+    /* It makes the actual text color transparent/invisible */
+    -webkit-text-fill-color: transparent;
+}
+.design .circle
+{
+    aspect-ratio: 1;
+    /* for fixed height and width we use aspect ratio */
+    position: absolute;
+    border-radius: 50%;
+    top: 33%;
+    left: 90%;
+    transform:translate(-50%,-50%) ;
+    /* All of the above properties are for centring elements */
+
+}
+
+.circle:nth-child(1)
+{
+    background:linear-gradient(90deg, var(--light-mint) 50%, var(--off-white) 50%);
+    width: 10rem;
+}
+
+.circle:nth-child(2)
+{
+    background: var(--white);
+    width: 12rem;
+    background-position: center;
+    background-image: url("image4.svg");
+    background-size:100%;
+    /* adjusting the size of image */
+    background-repeat: no-repeat;
+    border:2rem solid var(--white);
+    /* for round border color accross the circle */
+    box-shadow: 0 0 1rem var(--white), inset 0 0 1rem var(--white),0 0 3rem var(--primary-teal),inset 0 0 3rem var(--primary-teal),0 0 5rem var(--primary-teal),inset 0 0 4rem var(--white);
+}
+.nav-list li a::after
+/* this whole .nav-list li a::after body is used to draw a line under every anchor tag */
+{
+    content: "";
+    position: absolute;
+    background: var(--light-mint);
+    width: 100%;
+    height: .1rem;
+    left: 0%;
+    bottom: -5px;
+}
+.nav-list li a:hover
+{
+    color: var(--light-mint);
+}

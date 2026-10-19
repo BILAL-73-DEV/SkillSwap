@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | SkillSwap</title>
+  <link rel="stylesheet" href="student.css">
+  <link rel="stylesheet" href="order.html">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="../../index.html">SkillSwap</a>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="services.html">Marketplace</a></li>
+        <li><a href="dashboard.html" aria-current="page">Dashboard</a></li>
+        <li><a href="profile.html">My Profile</a></li>
+        <li><a href="order.html">My Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-heading">
+      <h1>Student Dashboard</h1>
+      <p>Welcome back, Ahmad. Here’s a snapshot of your SkillSwap activity.</p>
+    </header>
+
+    <section class="card profile-intro" aria-label="Student profile summary">
+      <div class="avatar" aria-hidden="true">AK</div>
+      <div>
+        <h2>Ahmad Khan</h2>
+        <p>Computer Science student · Example University</p>
+        <div class="quick-links">
+          <a class="button" href="profile.html">View Profile</a>
+          <a class="button button-secondary" href="edit-profile.html">Edit Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-grid" aria-label="Account statistics">
+      <article class="stat-card">
+        <span>Services offered</span>
+        <strong>3</strong>
+      </article>
+      <article class="stat-card">
+        <span>Active orders</span>
+        <strong>2</strong>
+      </article>
+      <article class="stat-card">
+        <span>Completed orders</span>
+        <strong>8</strong>
+      </article>
+      <article class="stat-card">
+        <span>Average rating</span>
+        <strong>4.8 ★</strong>
+      </article>
+    </section>
+
+    <div class="dashboard-grid">
+      <section class="card">
+        <h2>Your services</h2>
+        <div class="service-list">
+          <article class="service-item">
+            <h3>Intro to Python tutoring</h3>
+            <p>$15 per session · <span class="badge">Active</span></p>
+          </article>
+          <article class="service-item">
+            <h3>Website styling with CSS</h3>
+            <p>$25 per project · <span class="badge badge-featured">Featured</span></p>
+          </article>
+          <article class="service-item">
+            <h3>HTML assignment guidance</h3>
+            <p>$12 per session · <span class="badge">Active</span></p>
+          </article>
+        </div>
+        <div class="quick-links">
+          <a class="button button-secondary" href="../marketplace/sell-service.html">Offer a Service</a>
+          <a href="../marketplace/services.html">Browse marketplace</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Recent activity</h2>
+        <div class="service-list">
+          <article class="service-item">
+            <h3>Python tutoring session</h3>
+            <p>Active order · Due Oct 18</p>
+          </article>
+          <article class="service-item">
+            <h3>Landing page review</h3>
+            <p>Completed · Oct 6</p>
+          </article>
+        </div>
+        <div class="quick-links">
+          <a class="button button-secondary" href="../orders/my-orders.html">View My Orders</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>SkillSwap · Learn and share skills with your university community.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Services | SkillSwap</title>
+  <link rel="stylesheet" href="marketplace.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <a class="brand" href="../../index.html"><span class="brand-mark">S</span> SkillSwap</a>
+    <button class="nav-toggle" aria-label="Navigation menu"
+      onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links">
+      <a class="active" href="services.html">Explore</a>
+      <a href="categories.html">Categories</a>
+      <a href="sell-service.html">Become a Seller</a>
+      <a class="nav-cta" href="sell-service.html">Offer a Skill <span>↗</span></a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="market-hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> STUDENT-POWERED MARKETPLACE</span>
+        <h1>Great skills.<br><span>Real collaboration.</span></h1>
+        <p>Find talented students, learn something new, and get your next project moving. Skills are better when shared.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#services">Explore services <span>→</span></a>
+          <a class="button button-quiet" href="sell-service.html">Share your skill</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack"><span>AK</span><span>MA</span><span>HS</span></div><span><strong>Built by
+              students,</strong> for students</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of student collaboration">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-note note-top">✦ &nbsp; Learn together</div>
+        <div class="art-card art-card-main">
+          <div class="art-window"><i></i><i></i><i></i></div>
+          <div class="art-lines"><b></b><b></b><b></b></div>
+          <div class="art-code">&lt;/&gt;</div><span class="art-card-label">YOUR NEXT BIG IDEA</span>
+        </div>
+        <div class="art-float float-left"><span class="float-icon">✳</span><span><b>Creative minds</b><small>One campus
+              away</small></span></div>
+        <div class="art-float float-right"><span class="check-icon">✓</span><span><b>Skill unlocked</b><small>Keep
+              growing</small></span></div>
+        <div class="art-spark spark-one">✦</div>
+        <div class="art-spark spark-two">✧</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>01</strong><span>Discover student talent</span></div>
+      <div><strong>02</strong><span>Compare services</span></div>
+      <div><strong>03</strong><span>Collaborate confidently</span></div>
+    </section>
+
+    <section class="section-wrap" id="services">
+      <div class="section-heading">
+        <div><span class="eyebrow">THE SKILLS DIRECTORY</span>
+          <h2>Find the right <span>help.</span></h2>
+          <p>Explore services offered by students in our community.</p>
+        </div><a class="text-link" href="categories.html">Browse categories <span>→</span></a>
+      </div>
+      <div class="search-panel">
+        <label class="search-box"><span>⌕</span><input type="search"
+            placeholder="Try “website design” or “Python tutoring”" aria-label="Search services"></label>
+        <label class="select-box"><span>Category</span><select aria-label="Category">
+            <option>All categories</option>
+            <option>Programming</option>
+            <option>Graphic Design</option>
+            <option>Presentation Design</option>
+            <option>Tutoring</option>
+            <option>Content Writing</option>
+            <option>Video Editing</option>
+          </select></label>
+        <label class="select-box"><span>Budget</span><select aria-label="Price range">
+            <option>Any price</option>
+            <option>Under Rs. 1,000</option>
+            <option>Rs. 1,000–3,000</option>
+            <option>Rs. 3,000+</option>
+          </select></label>
+        <button class="button button-primary search-button" type="button">Search <span>→</span></button>
+      </div>
+      <div class="results-row">
+        <p><strong>Featured services</strong> <span>· 6 student offers</span></p><span class="sort-label">Curated for
+          you <span>⌄</span></span>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><a class="service-image image-code" href="service-details.html"
+            aria-label="View web development service">
+            <div class="image-top"><span class="mini-tag">POPULAR</span><span class="image-symbol">⌘</span></div>
+            <div class="code-window">
+              <div class="code-dots">● ● ●</div>
+              <p><span>const</span> idea = <em>"yours"</em>;</p>
+              <p>build(idea);<b>▌</b></p>
+              <p class="code-muted">// make it real</p>
+            </div><span class="image-caption">WEB DEVELOPMENT</span>
+          </a>
+          <div class="service-body">
+            <div class="service-category">PROGRAMMING</div>
+            <h3>Responsive Website Development</h3>
+            <p class="service-description">Modern, mobile-friendly websites built for your project or portfolio.</p>
+            <div class="seller-row"><span class="seller-avatar avatar-violet">AK</span><span><b>Ahmed
+                  Khan</b><small>COMSATS University</small></span><span class="rating">★ 4.9</span></div>
+            <div class="card-bottom"><span class="price-label">Starting at <strong>Rs. 2,500</strong></span><a
+                class="card-link" href="service-details.html">View details <span>↗</span></a></div>
+          </div>
+        </article>
+        <article class="service-card"><a class="service-image image-design" href="service-details.html"
+            aria-label="View graphic design service">
+            <div class="design-shape shape-one"></div>
+            <div class="design-shape shape-two"></div>
+            <div class="design-shape shape-three"></div><span class="design-word">MAKE<br>IT <i>POP.</i></span><span
+              class="image-caption">VISUAL DESIGN</span>
+          </a>
+          <div class="service-body">
+            <div class="service-category">GRAPHIC DESIGN</div>
+            <h3>Social Media & Brand Graphics</h3>
+            <p class="service-description">Eye-catching posts, banners, and starter brand kits for your idea.</p>
+            <div class="seller-row"><span class="seller-avatar avatar-orange">MA</span><span><b>Maryam Ali</b><small>Art
+                  & Design Society</small></span><span class="rating">★ 4.8</span></div>
+            <div class="card-bottom"><span class="price-label">Starting at <strong>Rs. 1,200</strong></span><a
+                class="card-link" href="service-details.html">View details <span>↗</span></a></div>
+          </div>
+        </article>
+        <article class="service-card"><a class="service-image image-slides" href="service-details.html"
+            aria-label="View presentation design service">
+            <div class="slide-card slide-back"></div>
+            <div class="slide-card slide-front"><span>IDEA<br>TO IMPACT</span><i></i><b></b></div><span
+              class="image-caption">PRESENTATION DESIGN</span>
+          </a>
+          <div class="service-body">
+            <div class="service-category">PRESENTATION DESIGN</div>
+            <h3>Clean, Professional Slides</h3>
+            <p class="service-description">Turn your class assignment into a clear, polished presentation.</p>
+            <div class="seller-row"><span class="seller-avatar avatar-green">HS</span><span><b>Hassan
+                  Shah</b><small>Business Studies</small></span><span class="rating">★ 5.0</span></div>
+            <div class="card-bottom"><span class="price-label">Starting at <strong>Rs. 900</strong></span><a
+                class="card-link" href="service-details.html">View details <span>↗</span></a></div>
+          </div>
+        </article>
+        <article class="service-card"><a class="service-image image-tutor" href="service-details.html"
+            aria-label="View programming tutoring service">
+            <div class="tutor-circle">0101<span>↗</span></div>
+            <div class="tutor-label">LEARN BY<br>DOING.</div><span class="image-caption">1-TO-1 TUTORING</span>
+          </a>
+          <div class="service-body">
+            <div class="service-category">TUTORING</div>
+            <h3>Java & OOP Study Sessions</h3>
+            <p class="service-description">Friendly one-to-one help with Java fundamentals and OOP concepts.</p>
+            <div class="seller-row"><span class="seller-avatar avatar-blue">UZ</span><span><b>Usman
+                  Zahid</b><small>Software Engineering</small></span><span class="rating">★ 4.9</span></div>
+            <div class="card-bottom"><span class="price-label">Starting at <strong>Rs. 700</strong></span><a
+                class="card-link" href="service-details.html">View details <span>↗</span></a></div>
+          </div>
+        </article>
+        <article class="service-card"><a class="service-image image-writing" href="service-details.html"
+            aria-label="View content writing service">
+            <div class="writing-paper"><span>WORDS<br>THAT <i>WORK.</i></span><b>✍</b><small>STORY · CLARITY ·
+                IMPACT</small></div><span class="image-caption">CONTENT STUDIO</span>
+          </a>
+          <div class="service-body">
+            <div class="service-category">CONTENT WRITING</div>
+            <h3>Editing & Content Polishing</h3>
+            <p class="service-description">Improve clarity, flow, and structure in your original writing.</p>
+            <div class="seller-row"><span class="seller-avatar avatar-pink">FA</span><span><b>Fatima
+                  Ahmed</b><small>Media & Communication</small></span><span class="rating">★ 4.7</span></div>
+            <div class="card-bottom"><span class="price-label">Starting at <strong>Rs. 800</strong></span><a
+                class="card-link" href="service-details.html">View details <span>↗</span></a></div>
+          </div>
+        </article>
+        <article class="service-card"><a class="service-image image-video" href="service-details.html"
+            aria-label="View video editing service">
+            <div class="video-frame"><span>▶</span><i></i><b></b></div>
+            <div class="video-time">00:30 / 01:00</div><span class="image-caption">VIDEO EDITING</span>
+          </a>
+          <div class="service-body">
+            <div class="service-category">VIDEO EDITING</div>
+            <h3>Short-Form Video Editing</h3>
+            <p class="service-description">Snappy edits, captions, and transitions for reels and short videos.</p>
+            <div class="seller-row"><span class="seller-avatar avatar-red">ZM</span><span><b>Zain
+                  Malik</b><small>Digital Media Club</small></span><span class="rating">★ 4.8</span></div>
+            <div class="card-bottom"><span class="price-label">Starting at <strong>Rs. 1,500</strong></span><a
+                class="card-link" href="service-details.html">View details <span>↗</span></a></div>
+          </div>
+        </article>
+      </div>
+      <div class="bottom-cta">
+        <div><span class="eyebrow">YOUR SKILL HAS VALUE</span>
+          <h2>Good at something? <span>Share it.</span></h2>
+          <p>Help a fellow student and build experience while you're at it.</p>
+        </div><a class="button button-light" href="sell-service.html">List your service <span>→</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand" href="../../index.html"><span class="brand-mark">S</span> SkillSwap</a>
+    <p>Learn together. Build together. Grow together.</p>
+    <div class="footer-links"><a href="services.html">Explore</a><a href="categories.html">Categories</a><a
+        href="sell-service.html">Become a seller</a></div><small>© 2026 SkillSwap · Student-powered,
+      community-first.</small>
+  </footer>
+</body>
+
+</html>
